@@ -402,6 +402,9 @@ function! s:UI.render()
         call cursor(line(".")+1, col("."))
     endif
 
+    set nu
+    set rnu
+
     if self.getShowBookmarks()
         call self._renderBookmarks()
     endif
